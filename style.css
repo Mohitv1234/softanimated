@@ -75,8 +75,14 @@ nav{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 15px 0;
 }
+#bottom h1:hover{
+    font-size: 57px;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(18, 175, 175);
+}
 .animate__rubberBand{
     animation-duration: 1.5s;
+    animation-delay: 4s;
 }
 #bottom p{
     font-size: 14px;
@@ -136,9 +142,6 @@ bottom: -59%;
     left: -30%;
     bottom: 10%;
 }
-.animate__flip{
-    animation-duration: 2s;
-}
 #month{
     position: absolute;
     left: -80%;
@@ -146,9 +149,18 @@ bottom: -59%;
     transform: rotate(-90deg);
     font-size: 12px;
 }
+nav #left:hover{
+    transform-origin: 0 50%;
+    transform: rotate(10deg);
+    transition-delay: 0.2s;
+}
 #month a{
     text-decoration: none;
     color: black;
+}
+#month a:hover{
+    font-size: 17px;
+    color: rgb(143, 47, 233);
 }
 #mline{
     width: 300px;
@@ -206,6 +218,12 @@ bottom: -59%;
     background-size: contain;
     background-position: center;
 }
+#upimg:hover{
+    width: 35%;
+    height: 51%;
+    border-radius: 10px;
+    border: 5px solid green;
+}
 #downimg{
     width: 35%;
     height: 48%;
@@ -215,6 +233,12 @@ bottom: -59%;
     position: absolute;
     bottom: 0px;
 }
+#downimg:hover{
+    width: 35%;
+    height: 51%;
+    border-radius: 10px;
+    border: 5px solid green;
+}
 #mainimg{
     width: 61%;
     height: 100%;
@@ -223,6 +247,12 @@ bottom: -59%;
     background-position: center;
     position: absolute;
     right: 0px;
+}
+#mainimg:hover{
+    width: 63%;
+    height: 104%;
+    border-radius: 10px;
+    border: 5px solid green;
 }
 #mainback {
     background-color: rgba(255, 255, 255, 0.3);
@@ -294,4 +324,8 @@ align-items: center;
     position: absolute;
     top: -50%;
     right: -12px;
+}
+i:hover{
+    font-size: 22px;
+    color: rgb(58, 177, 177);
 }
